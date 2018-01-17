@@ -1,0 +1,35 @@
+img {
+    width: 455px;
+    height: 563px;
+    margin-top: 33px;
+}
+
+.main {
+    display: flex;
+    justify-content:  center;
+}
+
+.right-drop-down {
+}
+
+.header {
+    justify-content:  space-around;
+    background-color:  #FFFFFF;
+    border: #ACB1B4 solid 1px;
+    display: flex;
+}
+
+body {
+    background-color: #E6ECF0;
+}
+
+.left-buttons {
+    display: flex;
+    justify-content:  space-between;
+}
+
+.textbox {
+    margin-top: 181px;
+    margin-right: 69px;
+    width: 383px;
+}
