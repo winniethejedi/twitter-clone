@@ -1,4 +1,4 @@
-img {
+#phones {
     width: 455px;
     height: 563px;
     margin-top: 33px;
@@ -9,18 +9,24 @@ img {
     justify-content:  center;
 }
 
-.right-drop-down {
-}
+.right-drop-down {display:  flex;}
 
 .header {
     justify-content:  space-around;
     background-color:  #FFFFFF;
     border: #ACB1B4 solid 1px;
     display: flex;
+    margin-top:  -9px;
+    margin-left:  -8px;
+    margin-right: -11px;
+    padding-top: 8px;
+    padding-bottom:  11px;
+    color:  #66757f;
 }
 
 body {
     background-color: #E6ECF0;
+    font-family:  sans-serif;
 }
 
 .left-buttons {
@@ -32,4 +38,66 @@ body {
     margin-top: 181px;
     margin-right: 69px;
     width: 383px;
+}
+
+button.button {
+    border: none;
+    background-color: #1DA1F2;
+    color: #FFFFFF;
+    border-radius: 79px;
+    display: flex;
+    margin-top: 15px;
+    padding: 6px;
+    padding-left:  12px;
+    padding-right:  12px;
+}
+
+.buttons {
+    height: 65px;
+}
+
+.question {
+    padding-top: 49px;
+    color: #28A5F2;
+    font-size: 12px;
+}
+
+.info {
+    font-size: 14px;
+    font-weight:  normal;
+}
+
+.download {
+    margin-bottom:  -5px;
+}
+
+button.button:hover {
+    background-color: #006DBF;
+    cursor: pointer;
+}
+
+p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#bird {
+    height: 27px;
+    margin-top:  10px;
+}
+
+.left-button {
+    display: flex;
+}
+
+#lightning {
+    height: 22px;
+    margin-top: 13px;
+    margin-left:  25px;
+    margin-right: 7px;
+}
+
+#login {
+    margin-left: 10px;
+    margin-top: 16px;
 }
