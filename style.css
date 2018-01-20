@@ -9,10 +9,10 @@
     justify-content:  center;
 }
 
-.right-drop-down {display:  flex;}
+.right-drop-down {display:  flex;margin-right: -74px;}
 
 .header {
-    justify-content:  space-around;
+    justify-content: space-around;
     background-color:  #FFFFFF;
     border: #ACB1B4 solid 1px;
     display: flex;
@@ -20,7 +20,7 @@
     margin-left:  -8px;
     margin-right: -11px;
     padding-top: 8px;
-    padding-bottom:  11px;
+    padding-bottom: 0px;
     color:  #66757f;
 }
 
@@ -32,6 +32,7 @@ body {
 .left-buttons {
     display: flex;
     justify-content:  space-between;
+    margin-right: 262px;
 }
 
 .textbox {
@@ -50,6 +51,7 @@ button.button {
     padding: 6px;
     padding-left:  12px;
     padding-right:  12px;
+    font-weight:  bold;
 }
 
 .buttons {
@@ -57,7 +59,7 @@ button.button {
 }
 
 .question {
-    padding-top: 49px;
+    margin-top: 64px;
     color: #28A5F2;
     font-size: 12px;
 }
@@ -76,10 +78,6 @@ button.button:hover {
     cursor: pointer;
 }
 
-p:hover {
-    text-decoration: underline;
-    cursor: pointer;
-}
 
 #bird {
     height: 27px;
@@ -88,16 +86,181 @@ p:hover {
 
 .left-button {
     display: flex;
+    margin-left: 13px;
+    margin-right: 13px;
+    font-weight: bold;
 }
 
 #lightning {
     height: 22px;
     margin-top: 13px;
-    margin-left:  25px;
+    margin-left: 0px;
     margin-right: 7px;
 }
 
 #login {
-    margin-left: 10px;
-    margin-top: 16px;
+    margin-left: 4px;
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+
+}
+
+.dropbtn {
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: #FFFFFF;
+    color: #66757f;
+    display:  flex;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+} 
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FFFFFF;
+    width: 207px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 26px;
+}
+
+@media (max-width: 936px) {
+   #lightning {
+       display: none;
+   }
+   .left-button > p {
+       display: none;
+   }
+   #bird {
+       
+   }
+}
+
+@media ( max-width: 900px) {
+    .main {
+        display: flex;
+        /* flex-direction: column; */
+        width: 80%;
+        margin:  auto;
+        justify-content: center;
+        flex-wrap:  wrap;
+        margin-top: 0px;
+    }
+}
+
+button#sign-up {
+    background-color: #FFFFFF;
+    color: #1DA1F2;
+    border: solid 1px #1DA1F2;
+    display: inline-flex;
+    padding-right: 78px;
+    padding-left: 78px;
+}
+
+button#login-button {
+    padding-right: 83px;
+    padding-left: 83px;
+    margin-top: 5px;
+}
+
+button#sign-up:hover {
+    background-color: #E6ECF0;
+}
+
+.left-button:hover {
+    border-bottom: 1px solid #1C94E0;
+    color: #1C94E0;
+    padding-bottom: -5;
+}
+
+input[type="text"] {
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border-style: solid;
+    border-color: #E6ECF0;
+}
+
+input[type="password"] {
+    margin-bottom: 9px;
+    border-style: solid;
+    border-color: #E6ECF0;
+}
+
+p#me {
+    font-size: 10px;
+    display: inline-flex;
+}
+
+.left-button:hover {
+    cursor:  pointer;
+}
+
+p.question:hover {
+    cursor:  pointer;
+    text-decoration:  underline;
+}
+
+p#account {
+    font-size: 13px;
+}
+
+::placeholder:enabled {
+   color: #A3ADB6;
+}
+
+p#new {
+    font-size: 13px;
+    border-top: 1px solid #E6ECF0;
+    padding-top: 13px;
+    margin-bottom: -4px;
+}
+
+p#forgot {
+    display:  inline-flex;
+    font-size: 10px;
+    color: #3EA4E5;
+}
+
+p#forgot:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    margin-right: -2px;
+}
+
+p#account2 {
+    font-size: 13px;
+    margin-top: -3px;
+    margin-bottom: 8px;
+}
+
+input {
+    padding: 3px;
+    padding-right: 29px;
+    border-radius: 4px;
+}
+
+input[type="checkbox"]:hover {
+    cursor: pointer;
+}
+
+input:focus::-webkit-input-placeholder {
+    color: #A8B2BB;
+    border-color: #7FC1D9
 }

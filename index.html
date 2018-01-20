@@ -7,30 +7,73 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Download the free Twitter app | Twitter</title>
 </head>
+<style>
+.show {
+    display: block;
+    top: 54px;
+    right: -62px;
+    padding: 13px;
+}
+</style>
 <body>
     <div class="header">
         <div class="left-buttons">
            <div class = "left-button"><img id = "bird" src="./images/twitter-bird.jpg" alt="Twitter bird"> <p>Home</p></div>
            <div class = "left-button"><img id = "lightning" src="./images/lightning.jpg" alt="Lightning"> <p>Moments</p></div>
         </div>
-        <div class="right-drop-down">
-           <p id="acccount">Have an account?</p><h4 id="login">Log in</h4>
+        <div class="dropdown">
+          <div class="right-drop-down">
+             <button onclick="myFunction()" class = "dropbtn"><p id="account">Have an account?</p><h4 id="login">Log in</h4></button> 
+          </div>
+          <div id="myDropdown" class="dropdown-content">
+              <p id="account2">Have an account?</p>
+              <input type="text" name ="email" placeholder="Phone, email, or username">
+              <input type="password" name="password" placeholder="Password"><br>
+              <input type="checkbox" name ="remember" value="memory">
+              <p id="me">Remember me</p>
+              <p id ="forgot">Forgot password?</p>
+              <button class="button" id = "login-button">Log in</button>
+              <p id = "new">New to Twitter?</p>
+              <button class="button" id="sign-up">Sign up</button>
+          </div>
         </div>
     </div>
     <div class="main">
       <div class="textbox">
           <h1 class="download">Download the app</h1>
-          <h4 class="info">Get the twitter app on your mobile phone. It's easy. Just select your device.</h4>
+          <h4 class="info">Get the Twitter app on your mobile phone. It's easy. Just select your device.</h4>
           <div class="buttons">
-            <button class="button">Android</button>     <button class="button">iOS</button>
+            <button class="button">Android</button>     
+            <button class="button">iOS</button>
             <button class="button">Windows Phone</button>
           </div>
           <p class = "question">Don't have an iOS, Android, or Windows Device?</p>
       </div>
       <div class="image">
-           <img id ="phones" src=".\images\phone.png" alt="Take Twitter with you">
+           <img id ="phones" src=".\images\phone.png" alt="Take Twitter with you" title="Take Twitter with you">
       </div>
     </div>
-    
+
+<script>
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+
+            let dropdowns = document.getElementsByClassName("dropdown-content");
+            let i;
+            for (i = 0; i < dropdowns.length; i ++) {
+                let openDropdown = dropdowns.length[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+</script>
+   
+
 </body>
 </html>
