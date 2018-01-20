@@ -153,13 +153,13 @@ button.button:hover {
 @media ( max-width: 900px) {
     .main {
         display: flex;
-        /* flex-direction: column; */
         width: 80%;
         margin:  auto;
         justify-content: center;
         flex-wrap:  wrap;
-        margin-top: 0px;
+        margin-top: -170px;
     }
+   
 }
 
 button#sign-up {
@@ -185,6 +185,7 @@ button#sign-up:hover {
     border-bottom: 1px solid #1C94E0;
     color: #1C94E0;
     padding-bottom: -5;
+    cursor:  pointer;
 }
 
 input[type="text"] {
@@ -205,10 +206,6 @@ p#me {
     display: inline-flex;
 }
 
-.left-button:hover {
-    cursor:  pointer;
-}
-
 p.question:hover {
     cursor:  pointer;
     text-decoration:  underline;
@@ -223,7 +220,7 @@ p#account {
 }
 
 p#new {
-    font-size: 13px;
+    font-size: 12px;
     border-top: 1px solid #E6ECF0;
     padding-top: 13px;
     margin-bottom: -4px;
